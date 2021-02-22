@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+## Load the required modules
+module load mpt
+module load intel-compilers-19
+
+## compile
+
+
+## compile with MPI:
+mpicxx para_wave_square.cpp  -o para_wave_square
+mpicxx para_wave_vert.cpp  -o para_wave_vert
+mpicxx para_wave_horiz.cpp  -o para_wave_horiz
+
+## remove object files if there is any!:
+# rm *.mod
+# rm *.o
+
