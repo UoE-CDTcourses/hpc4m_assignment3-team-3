@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+## Load the required modules
+module load mpt
+module load intel-compilers-19
+
+## compile
+
+
+## compile with MPI:
+mpicxx 2DWave_vert_nd.cpp  -o wave_exe
+mpicxx 2DWave_hor.cpp -o wave_eve
+mpicxx 2DWave_hor_nd
+
+## remove object files if there is any!:
+# rm *.mod
+# rm *.o
+
